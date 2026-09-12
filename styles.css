@@ -471,13 +471,10 @@ button {
   align-items: center;
 }
 
-.process-media {
-  aspect-ratio: 4 / 3;
+.process-media img {
+  width: 100%;
+  height: auto;
   border-radius: 4px;
-  background:
-    url('/icons/moba-icon.svg') center / 40% no-repeat,
-    rgba(35, 35, 35, 0.05);
-  opacity: 0.7;
 }
 
 .process-copy h2 {
