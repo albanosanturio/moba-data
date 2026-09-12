@@ -389,6 +389,7 @@ button {
   background: #2a2a2a;
   color: var(--bone);
   opacity: 0.72;
+  padding: clamp(24px, 3.2vw, 36px);
   transition: opacity 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 }
 
@@ -436,12 +437,12 @@ button {
 
 .service-block ul {
   list-style: none;
-  margin: 20px 0 0;
+  margin: 16px 0 0;
   padding: 0;
 }
 
 .service-block li {
-  padding: 12px 0;
+  padding: 10px 0;
   border-top: 1px solid rgba(244, 241, 236, 0.15);
   font-size: 0.98rem;
   display: flex;
