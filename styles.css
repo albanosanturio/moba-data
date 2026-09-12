@@ -464,17 +464,24 @@ button {
 }
 
 /* ---------- cómo se trabaja ---------- */
-.process {
-  display: grid;
-  grid-template-columns: 1fr 1.15fr;
-  gap: clamp(32px, 6vw, 72px);
+.process-section {
+  background-color: var(--bone);
+  background-image:
+    linear-gradient(90deg, rgba(244,241,236,0) 0%, rgba(244,241,236,0.6) 55%, var(--bone) 80%),
+    url('/images/how-we-work.jpg');
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+  min-height: clamp(380px, 42vw, 520px);
+  display: flex;
   align-items: center;
 }
 
-.process-media img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
+.process-section .wrap { width: 100%; }
+
+.process-copy {
+  max-width: 46ch;
+  margin-left: auto;
 }
 
 .process-copy h2 {
@@ -487,12 +494,18 @@ button {
   font-size: 1.1rem;
   line-height: 1.7;
   color: var(--gray);
-  max-width: 56ch;
 }
 
-@media (max-width: 800px) {
-  .process { grid-template-columns: 1fr; }
-  .process-media { order: -1; }
+@media (max-width: 720px) {
+  .process-section {
+    background-image:
+      linear-gradient(180deg, rgba(244,241,236,0.4) 0%, var(--bone) 80%),
+      url('/images/how-we-work.jpg');
+    background-position: center top;
+    min-height: unset;
+    padding: clamp(48px, 14vw, 80px) 0;
+  }
+  .process-copy { max-width: 100%; margin-left: 0; }
 }
 
 /* ---------- contacto ---------- */
