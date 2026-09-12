@@ -33,10 +33,6 @@ contacto de ambos footers.
 
 ## Pendiente antes de publicar
 
-- **Formulario de contacto**: el `action` del `<form>` en ambas páginas
-  apunta a un placeholder de Formspree (`your-form-id`). Crear el
-  formulario en Formspree (o servicio equivalente sin backend) y
-  reemplazar la URL.
 - **Analítica**: no está incluida. Agregar Plausible o Umami (script
   liviano, sin cookies) antes de publicar si se quiere medir tráfico.
 - **WHOIS**: verificar que la privacidad de WHOIS esté activada en
